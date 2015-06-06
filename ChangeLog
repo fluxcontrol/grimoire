@@ -1,3 +1,6 @@
+2015-06-05 Pavel Vinogradov <public@sourcemage.org>
+	* archive-libs/zlib-ng: new spell, next generation zlib
+
 2015-06-03 Ismael Luceno <ismael@sourcemage.org>
 	* devel/jimtcl: new spell, A small-footprint implementation of
 	  Tcl

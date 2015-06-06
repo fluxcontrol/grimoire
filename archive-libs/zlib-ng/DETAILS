@@ -1,0 +1,16 @@
+. "$GRIMOIRE/FUNCTIONS"
+           SPELL=zlib-ng
+         VERSION=$(get_scm_version)
+          SOURCE=${SPELL}-git.tar.bz2
+   SOURCE_URL[0]=git://github.com/dead2/${SPELL}:${SPELL}-git:develop
+  FORCE_DOWNLOAD=on
+   SOURCE_IGNORE=volatile
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-git
+        WEB_SITE=https://github.com/Dead2/zlib-ng
+         ENTERED=20150605
+      LICENSE[0]=ZLIB
+           SHORT="zlib for the next generation systems"
+cat << EOF
+zlib for the "next generation" systems. Drop-In replacement with
+some serious optimizations.
+EOF

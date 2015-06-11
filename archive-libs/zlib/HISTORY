@@ -1,3 +1,7 @@
+2015-06-10 Pavel Vinogradov <public@sourcemage.org>
+	* CONFLICTS: conflicts with zlib-ng
+	* PROVIDES: added ZLIBRARY provider
+
 2015-03-29 Vlad Glagolev <stealth@sourcemage.org>
 	* INSTALL: moved removal of extra src dirs to FINAL, otherwise it
 	  prevents castfs from proper unmounting

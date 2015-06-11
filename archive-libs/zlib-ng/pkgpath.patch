@@ -1,0 +1,22 @@
+--- Makefile.in.orig	2015-06-10 20:43:35.972063316 -0400
++++ Makefile.in	2015-06-10 20:47:12.623442942 -0400
+@@ -64,7 +64,7 @@
+ includedir = ${prefix}/include
+ mandir = ${prefix}/share/man
+ man3dir = ${mandir}/man3
+-pkgconfigdir = ${libdir}/pkgconfig
++pkgconfigdir = ${prefix}/lib/pkgconfig
+ 
+ OBJZ = adler32.o compress.o crc32.o deflate.o match.o infback.o inffast.o inflate.o inftrees.o trees.o uncompr.o zutil.o $(ARCH_STATIC_OBJS)
+ OBJG = gzclose.o gzlib.o gzread.o gzwrite.o
+@@ -258,8 +258,8 @@
+ 
+ install: install-libs
+ 	-@if [ ! -d $(DESTDIR)$(includedir)   ]; then mkdir -p $(DESTDIR)$(includedir); fi
+-	cp $(SRCDIR)/zlib.h zconf.h $(DESTDIR)$(includedir)
+-	chmod 644 $(DESTDIR)$(includedir)/zlib.h $(DESTDIR)$(includedir)/zconf.h
++	cp $(SRCDIR)/zlib.h zconf.h zutil.h $(DESTDIR)$(includedir)
++	chmod 644 $(DESTDIR)$(includedir)/zlib.h $(DESTDIR)$(includedir)/zconf.h $(DESTDIR)$(includedir)/zutil.h
+ 
+ uninstall-static:
+ 	cd $(DESTDIR)$(libdir) && rm -f $(STATICLIB)

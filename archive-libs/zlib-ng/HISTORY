@@ -1,2 +1,8 @@
+2015-06-10 Pavel Vinogradov <public@sourcemage.org>
+	* BUILD, INSTALL, PRE_BUILD, pkgpath.patch: switched to ./configure &&
+	  make, borrowed slightly modified patch from zlib spell
+	* DEPENDS: removed cmake
+	* PROVIDES: added ZLIBRARY provider
+
 2015-06-05 Pavel Vinogradov <public@sourcemage.org>
 	* BUILD, DETAILS, DEPENDS, CONFLICTS, PREPARE: created spell
